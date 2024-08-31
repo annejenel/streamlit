@@ -186,7 +186,6 @@ skills = {
     "Eating": 10
 }
 
-# Function to generate star ratings
 def generate_stars(rating):
     full_star = "images/one.png"
     empty_star = "images/empty.png"
@@ -198,7 +197,7 @@ def generate_stars(rating):
             stars.append(empty_star)
     return stars
 
-# Display skill ratings
+
 for skill, rating in skills.items():
     expander.write(f"**{skill}**:")
     star_images = generate_stars(rating)
